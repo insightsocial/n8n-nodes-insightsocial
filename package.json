@@ -1,0 +1,62 @@
+{
+  "name": "n8n-nodes-insightsocial",
+  "version": "0.1.0",
+  "description": "n8n community node for InsightSocial: public data from Instagram, TikTok, Facebook, LinkedIn, X, Threads, YouTube, Reddit and Pinterest through one API key, priced per call in credits.",
+  "license": "MIT",
+  "homepage": "https://www.insightsocial.app/docs",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "insightsocial",
+    "social media api",
+    "instagram api",
+    "tiktok api",
+    "linkedin api",
+    "youtube api",
+    "web scraping"
+  ],
+  "author": {
+    "name": "InsightSocial",
+    "email": "support@insightsocial.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insightsocial/n8n-nodes-insightsocial.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/InsightSocialApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/InsightSocial/InsightSocial.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "^0.50.4",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2",
+    "n8n-workflow": "*"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/insightsocial/n8n-nodes-insightsocial/issues"
+  }
+}

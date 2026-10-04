@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-insightsocial",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community node for InsightSocial: public data from Instagram, TikTok, Facebook, LinkedIn, X, Threads, YouTube, Reddit and Pinterest through one API key, priced per call in credits.",
   "license": "MIT",
   "homepage": "https://www.insightsocial.app/docs",

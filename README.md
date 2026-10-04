@@ -37,7 +37,7 @@ folder (usually `~/.n8n/custom`), then restart n8n.
 **Call Endpoint** options:
 
 - **Endpoint**: the dropdown shows each endpoint with its price, for example
-  `Profile (20 credits)` or `Post/Comments (20-140 credits, metered)`.
+  `Profile (20 credits)` or, for TikTok, `Post/Comments (20-60 credits, metered)`.
 - **Parameters**: loaded for the endpoint you picked, with the required ones marked.
 - **Return All Pages**: follows `pagination.next_cursor` until there are no more pages or
   **Max Pages** is reached. Every page is a separate, charged call.

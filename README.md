@@ -37,7 +37,7 @@ folder (usually `~/.n8n/custom`), then restart n8n.
 **Call Endpoint** options:
 
 - **Endpoint**: the dropdown shows each endpoint with its price, for example
-  `Profile (20 credits)` or, for TikTok, `Post/Comments (20-60 credits, metered)`.
+  `Profile (10 credits)` or, for TikTok, `Post/Comments (10-30 credits, metered)`.
 - **Parameters**: loaded for the endpoint you picked, with the required ones marked.
 - **Return All Pages**: follows `pagination.next_cursor` until there are no more pages or
   **Max Pages** is reached. Every page is a separate, charged call.
@@ -50,13 +50,13 @@ The node can also be used as a tool by n8n's **AI Agent**.
 ## Example: a TikTok account's followers into a sheet
 
 1. **Manual Trigger** (or Schedule Trigger).
-2. **InsightSocial**: Call Endpoint → Platform `TikTok` → Endpoint `User/Followers (20 credits)`
+2. **InsightSocial**: Call Endpoint → Platform `TikTok` → Endpoint `User/Followers (10 credits)`
    → `handle` = `nasa`. Turn on **Return All Pages**, **Max Pages** `2`.
 3. **Google Sheets**: Append Row.
 
-Measured on 2026-10-03: 2 pages, 300 followers, 40 credits.
+Measured on 2026-10-03: 2 pages, 300 followers. At today's prices that is 20 credits.
 
-A single profile lookup (`/v1/tiktok/profile`, `handle` = `nasa`) costs 20 credits.
+A single profile lookup (`/v1/tiktok/profile`, `handle` = `nasa`) costs 10 credits.
 
 ## Pricing
 
@@ -65,7 +65,7 @@ A single profile lookup (`/v1/tiktok/profile`, `handle` = `nasa`) costs 20 credi
 - **Metered** endpoints show a range. The top of the range is held when the call starts, and you
   are charged what the call actually used.
 - **Free**: failed calls, empty results, `dry_run=1` calls, Get Credits and List Endpoints.
-- Every account gets **10 free calls**, once, for calls priced at 200 credits or less.
+- Every account gets **10 free calls**, once, for calls priced at 100 credits or less.
 - Repeating a call is charged again, because it can return newer data.
 - Plans: Free has 500 credits a month, Pro 10,000. The balance is shared with InsightSocial exports.
   See [pricing](https://www.insightsocial.app/pricing).

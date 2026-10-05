@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3 - 2026-10-05
+
+- The credential's documentation link carries `utm_source=n8n`, so an account created from n8n's credential screen is attributed to n8n rather than to direct.
+- `x-insightsocial-client` sends `n8n/0.1.3`.
+
 ## 0.1.2 - 2026-10-04
 
 - The `x-insightsocial-client` header reports the package version (`n8n/0.1.2`); it still said `n8n/0.1.0`.

@@ -13,7 +13,7 @@ export class InsightSocialApi implements ICredentialType {
 
 	icon: Icon = { light: 'file:insightsocial.svg', dark: 'file:insightsocial.dark.svg' };
 
-	documentationUrl = 'https://www.insightsocial.app/docs/authentication';
+	documentationUrl = 'https://www.insightsocial.app/docs/authentication?utm_source=n8n';
 
 	properties: INodeProperties[] = [
 		{

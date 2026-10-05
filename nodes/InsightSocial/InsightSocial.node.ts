@@ -15,7 +15,7 @@ import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workf
 import { DEFAULT_BASE_URL, fetchCatalogue, toEndpointOptions, toResourceFields } from './catalogue';
 
 // Keep in step with package.json "version" (verified community nodes may not import it).
-const CLIENT_HEADER = 'n8n/0.1.2';
+const CLIENT_HEADER = 'n8n/0.1.3';
 
 const PLATFORMS: INodePropertyOptions[] = [
 	{ name: 'Facebook', value: 'facebook' },

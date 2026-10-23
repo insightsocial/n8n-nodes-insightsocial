@@ -1,8 +1,7 @@
 # n8n-nodes-insightsocial
 
 An [n8n](https://n8n.io) community node for the [InsightSocial API](https://www.insightsocial.app/docs):
-public data from Instagram, TikTok, Facebook, LinkedIn, X/Twitter, Threads, YouTube, Reddit and
-Pinterest. Profiles, posts, comments, followers, search and transcripts, through one API key and
+public data from TikTok, LinkedIn, X/Twitter, YouTube, Reddit and Pinterest. Profiles, posts, comments, followers, search and transcripts, through one API key and
 one credit balance, priced per call.
 
 The node reads the live endpoint catalogue, so every endpoint, parameter and price appears in

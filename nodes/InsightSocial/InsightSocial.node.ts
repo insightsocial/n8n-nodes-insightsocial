@@ -15,15 +15,12 @@ import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workf
 import { DEFAULT_BASE_URL, fetchCatalogue, toEndpointOptions, toResourceFields } from './catalogue';
 
 // Keep in step with package.json "version" (verified community nodes may not import it).
-const CLIENT_HEADER = 'n8n/0.1.3';
+const CLIENT_HEADER = 'n8n/0.1.4';
 
 const PLATFORMS: INodePropertyOptions[] = [
-	{ name: 'Facebook', value: 'facebook' },
-	{ name: 'Instagram', value: 'instagram' },
 	{ name: 'LinkedIn', value: 'linkedin' },
 	{ name: 'Pinterest', value: 'pinterest' },
 	{ name: 'Reddit', value: 'reddit' },
-	{ name: 'Threads', value: 'threads' },
 	{ name: 'TikTok', value: 'tiktok' },
 	{ name: 'Twitter/X', value: 'twitter' },
 	{ name: 'YouTube', value: 'youtube' },
@@ -47,7 +44,7 @@ export class InsightSocial implements INodeType {
 		version: 1,
 		subtitle: '={{ $parameter["operation"] === "call" ? $parameter["endpoint"] : $parameter["operation"] }}',
 		description:
-			'Public data from Instagram, TikTok, Facebook, LinkedIn, X, Threads, YouTube, Reddit and Pinterest',
+			'Public data from TikTok, LinkedIn, X, YouTube, Reddit and Pinterest',
 		defaults: { name: 'InsightSocial' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
@@ -86,7 +83,7 @@ export class InsightSocial implements INodeType {
 				name: 'platform',
 				type: 'options',
 				options: PLATFORMS,
-				default: 'instagram',
+				default: 'tiktok',
 				displayOptions: { show: { operation: ['call', 'list'] } },
 			},
 			{

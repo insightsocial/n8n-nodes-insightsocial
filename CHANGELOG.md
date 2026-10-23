@@ -2,7 +2,7 @@
 
 ## 0.1.4 - 2026-10-23
 
-- Facebook, Instagram and Threads are no longer offered: they are gone from the Platform list, and the Platform default is now TikTok. A workflow that still names one of them fails with the API's error.
+- The Platform list offers only LinkedIn, Pinterest, Reddit, TikTok, Twitter/X and YouTube, and the Platform default is now TikTok. A workflow that names a platform no longer on the list fails with the API's error.
 - `x-insightsocial-client` sends `n8n/0.1.4`.
 
 ## 0.1.3 - 2026-10-05
